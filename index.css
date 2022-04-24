@@ -30,18 +30,25 @@ html, body{
 .product-section{
     
     justify-content: space-around;
+    text-align: center;
     
 }
 
 .productCard{
     height: 100%;
- 
     width: 100%;
-    box-shadow: 11px 12px 5px -6px rgba(143,137,137,0.74);
--webkit-box-shadow: 11px 12px 5px -6px rgba(143,137,137,0.74);
--moz-box-shadow: 11px 12px 5px -6px rgba(143,137,137,0.74);
-    border-radius: .5rem;
+    -webkit-box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.6); 
+box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.6);
+        border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+   
     
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
 }
 .product-img{
     width: 100%;
@@ -57,7 +64,7 @@ html, body{
 }
 
 .title{
-    margin-top: 11%;
+    margin-top: 5%;
 }
 
 .price{
@@ -102,6 +109,11 @@ html, body{
   .create{
 color: beige; font-size: larger; margin-top: 13%; margin-left: 5%;
   }
+  
+  .create-list{
+    display: flex;
+    flex-direction: row;
+}
 
   .create:hover{
       cursor: pointer;
