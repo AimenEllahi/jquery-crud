@@ -1,119 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Font Awesome Icon Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
     <!--js-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
     <!-- jquery cdn -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+
     <script src="./index.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Modal -->
-    <div class="modal fade" id="create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="create"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Create Product</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-              <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Product Name</label>
-                    <input type="text" class="form-control inputName" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Cost</label>
-                    <input type="number" class="form-control inputCost" id="exampleInputPassword1">
-                  </div>
-                  <div class="form-group">
-                      <label for="exampleInputEmail1">Description</label>
-                      <textarea type="text" rows="4" class="form-control inputDesc" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
-                      
-                    </div>
-                  <div class="form-group">
-                      
-                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    </div>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" id="add" class="btn btn-primary">Add</button>
-                </form>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Product Name</label>
+                <input
+                  type="text"
+                  class="form-control inputName"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Cost</label>
+                <input
+                  type="number"
+                  class="form-control inputCost"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Description</label>
+                <textarea
+                  type="text"
+                  rows="4"
+                  class="form-control inputDesc"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input
+                  type="file"
+                  class="form-control-file"
+                  id="exampleFormControlFile1"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" id="add" class="btn btn-primary">
+                Add
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  
+
     <!--edit modal-->
-    <div class="modal fade" id="edit-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="edit-form"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Edit Product</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-              <form>
-                 <input type="hidden" name="" id="updateId">
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Edit Product Name</label>
-                    <input type="text" class="form-control UpdateInputName" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Edit Cost</label>
-                    <input type="number" class="form-control UpdateInputCost" id="exampleInputPassword1">
-                  </div>
-                  <div class="form-group">
-                      <label for="exampleInputEmail1">Edit Description</label>
-                      <textarea type="text" rows="4" class="form-control UpdateInputDesc" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
-                      
-                    </div>
-                  <div class="form-group">
-                      
-                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    </div>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" id="save-changes" class="btn btn-primary">Save Changes</button>
-                </form>
+            <form>
+              <input type="hidden" name="" id="updateId" />
+              <div class="form-group">
+                <label for="exampleInputEmail1">Edit Product Name</label>
+                <input
+                  type="text"
+                  class="form-control UpdateInputName"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Edit Cost</label>
+                <input
+                  type="number"
+                  class="form-control UpdateInputCost"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Edit Description</label>
+                <textarea
+                  type="text"
+                  rows="4"
+                  class="form-control UpdateInputDesc"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input
+                  type="file"
+                  class="form-control-file"
+                  id="exampleFormControlFile1"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" id="save-changes" class="btn btn-primary">
+                Save Changes
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-          <!-- navbar -->
-          <nav class="navbar navbar-expand-lg navbar-light bg-light" style=" background-color: rgb(36, 67, 107) !important;">
-              <a class="navbar-brand nav-link" href="#">Products</a>
-              <ul class="navbar-nav">
-                <li class="nav-item active create-list"  data-toggle="modal" data-target="#create">
-                  <a class="nav-link" href="#">Create</a>
-                  <i class="fa fa-plus-square create"></i>
-                </li>
-              </ul> 
-            </nav>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="background-color: rgb(36, 67, 107) !important"
+    >
+      <a class="navbar-brand nav-link" href="#">Products</a>
+      <ul class="navbar-nav">
+        <li
+          class="nav-item active create-list"
+          data-toggle="modal"
+          data-target="#create"
+        >
+          <a class="nav-link" href="#">Create</a>
+          <i class="fa fa-plus-square create"></i>
+        </li>
+      </ul>
+    </nav>
     <div class="container p-0 m-0">
-  
-
-        <!-- product section  -->
-        <div class="row w-100 p-0 m-0 product-section">
-                   
-        </div>
-
-
+      <!-- product section  -->
+      <div class="row w-100 p-0 m-0 product-section"></div>
     </div>
-</body>
+  </body>
 </html>
